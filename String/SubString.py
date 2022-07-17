@@ -1,3 +1,17 @@
+# 1. You are given a string.
+# 2. You have to print all palindromic substrings of the given string.
+
+# Example
+# Sample Input
+# abcc
+
+# Sample Output
+# a
+# b
+# c
+# cc
+# c
+
 # For palindrome
 def isPallindrome(st):
 	if st == st[::-1]:
