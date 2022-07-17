@@ -1,17 +1,31 @@
 def compression1(st):
-	temp = []
-	comp2 = ""
-	for i in range(0,len(st)):
-		for j in range(1, len(st)):
-			if st[i] == st[j]:
-				print("")
-			else:
-				temp.append(st[i])
-
-	return print(temp)
+	s = st[0]
+	for i in range(1, len(st)):
+		current = st[i]
+		previous = st[i - 1]
+		if current != previous:
+			s += st[i]
+	return s
 
 
+def compression2(st):
+	s = st[0]
+	count = 1
+	for i in range(1, len(st)):
+		current = st[i]
+		previous = st[i - 1]
+		if current == previous:
+			count += 1
+		else:
+			if count > 1:
+				s += str(count)
+				count = 1
+			s += current
+	if count > 1:
+		s += str(count)
+	return s
 
 
 st = "wwwwaaadexxxxxx"
-compression1(st)
+print(compression1(st))
+print(compression2(st))
