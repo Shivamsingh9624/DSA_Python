@@ -1,12 +1,32 @@
-# In this problem we will take maximum and minimum number from an array and will take difference of that
+# Format
+# Input
+# A number n
+# n1
+# n2
+# .. n number of elements
+#
+# Output
+# A number representing max - min
+#
+# Example
+# Sample Input
+#
+# 6
+# 15
+# 30
+# 40
+# 4
+# 11
+# 9
+#
+# Sample Output
+# 36
 
-# creating an empty list
+
 arr = []
 
-# number of elements as input
 n = int(input("Enter number of elements : "))
 
-# iterating till the range
 for i in range(0, n):
 	ele = int(input())
 

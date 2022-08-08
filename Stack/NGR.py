@@ -2,6 +2,30 @@
 # This can be done using the stack
 # The operation (POP - ANSWER - PUSH) is to be done
 
+# Format
+# Input
+# Input is managed for you
+#
+# Output
+# Output is managed for you
+#
+# Example
+# Sample Input
+#
+# 5
+# 5
+# 3
+# 8
+# -2
+# 7
+#
+# Sample Output
+# 8
+# 8
+# -1
+# 7
+# -1
+
 def ngr(arr):
 	stack = []
 	nge = [0] * len(arr)

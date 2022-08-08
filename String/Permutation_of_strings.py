@@ -1,3 +1,23 @@
+# Format
+# Input
+# A String
+#
+# Output
+# All permutations of the given string(one in a line).
+#
+# Example
+# Sample Input
+#
+# abc
+#
+# Sample Output
+# abc
+# bac
+# cab
+# acb
+# bca
+# cba
+
 def solution(s):
 	sub = []
 	for i in range(len(s)):

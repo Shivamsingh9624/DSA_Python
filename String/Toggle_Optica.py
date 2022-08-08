@@ -1,6 +1,15 @@
+# Format
+# Input
+# A String
+#
+#
+# Output
+# A String
+#
+#
 # Example
-
 # Sample Input
+#
 # pepCODinG
 #
 # Sample Output
