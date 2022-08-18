@@ -17,25 +17,33 @@
 # Sample Output
 # 3 4 5 1 2
 
-def reverse(i, j):
-	li = i
-	ri = j
-	while li < ri:
-		temp = arr[li]
-		arr[li] = arr[ri]
-		arr[ri] = temp
-		li += 1
-		ri -= 1
+# def reverse(i, j):
+# 	li = i
+# 	ri = j
+# 	while li < ri:
+# 		temp = arr[li]
+# 		arr[li] = arr[ri]
+# 		arr[ri] = temp
+# 		li += 1
+# 		ri -= 1
 
 
-def rotate(k):
-	k = k % len(arr)
-	if k < 0:
-		k = k + len(arr)
-	reverse(0, len(arr) - k - 1)
-	reverse(len(arr) - k, len(arr) - 1)
-	reverse(0, len(arr) - 1)
+# def rotate(k):
+# 	k = k % len(arr)
+# 	if k < 0:
+# 		k = k + len(arr)
+# 	reverse(0, len(arr) - k - 1)
+# 	reverse(len(arr) - k, len(arr) - 1)
+# 	reverse(0, len(arr) - 1)
+#
+# 	return arr
 
+
+def rotate(arr,k):
+	l = len(arr)
+	k = k % l
+	if k and l > 1:
+		arr[:k], arr[k:] = arr[-k:], arr[:-k]
 	return arr
 
 
@@ -46,4 +54,4 @@ for i in range(a):
 	arr.append(temp)
 
 k = int(input())
-print(rotate(k))
+print(rotate(arr,k))

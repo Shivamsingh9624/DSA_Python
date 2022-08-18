@@ -4,10 +4,10 @@
 # 3. You are given a number k.
 # 4. Rotate the array a, k times to the right (for positive values of k), and to
 # the left for negative values of k.
-#
+
 # Example
 # Sample Input
-#
+
 # 5
 # 1
 # 2
@@ -15,7 +15,7 @@
 # 4
 # 5
 # 3
-#
+
 # Sample Output
 # 3 4 5 1 2
 
